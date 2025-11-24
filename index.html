@@ -3,151 +3,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mwihaki Githii - Junior Web Developer Portfolio showcasing modern, responsive, interactive projects with HTML, CSS, JavaScript, Node.js, and React.">
-  <meta name="keywords" content="Junior Web Developer, HTML, CSS, JavaScript, React, Node.js, Portfolio, Frontend Developer">
+  <meta name="description" content="Mwihaki Githii - Junior Web Developer portfolio showcasing HTML, CSS, JavaScript, Node.js, and React.js projects.">
+  <meta name="keywords" content="Junior Web Developer, HTML, CSS, JavaScript, React, Node.js, Portfolio">
   <meta name="author" content="Mwihaki Githii">
   <title>Mwihaki Githii | Portfolio</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Raleway:wght@600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-  <!-- Stylesheet with cache busting -->
-  <link rel="stylesheet" href="style.css?v=1.2">
+  <link rel="stylesheet" href="style.css?v=1">
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">Mwihaki Githii</div>
-  <ul class="nav-links">
-    <li><a href="#home" class="active">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="hamburger">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Mwihaki Githii</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">&#9776;</div>
+  </nav>
 
-<main>
-  <!-- Home -->
-  <section id="home" class="section animate">
-    <div class="section-container">
-      <h1 class="section-title typing-text">Hello, I'm Mwihaki</h1>
-      <h2 class="section-subtitle">Junior Web Developer</h2>
-      <p class="section-text">I build sleek, responsive web applications using HTML, CSS, JavaScript, Node.js, and React. I create modern, professional solutions tailored to user experience.</p>
-      <a href="#contact" class="cta-btn">Contact Me</a>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section id="about" class="section animate">
-    <div class="section-container">
-      <h2 class="section-title">About Me</h2>
-      <p class="section-text">I am a motivated Junior Web Developer with a strong foundation in front-end technologies, React, Node.js, and Express. I have built multiple projects to sharpen my skills and am eager to grow professionally. I thrive in dynamic, creative environments and prioritize clean, maintainable code.</p>
-
-      <h3 class="section-subtitle">Skills & Technologies</h3>
-      <ul class="skills-list">
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section animate">
-    <div class="section-container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-        <!-- Example Project Card -->
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>Professional portfolio built with HTML, CSS, and JavaScript.</p>
-          <div class="project-links">
-            <a href="https://github.com/kikinjeri/mgithii" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://kikinjeri.github.io/mgithii" target="_blank" class="demo-link">Live Demo</a>
-          </div>
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="home animate">
+      <div class="home-container">
+        <div class="home-img">
+          <img src="/images/two.jpg" alt="Mwihaki Githii" class="profile-img"
+               onerror="this.onerror=null;this.style.display='none'; document.querySelector('.profile-placeholder').style.display='flex';" />
+          <div class="profile-placeholder" style="display:none;">MG</div>
         </div>
-
-        <div class="project-card">
-          <h3>Slot Machine</h3>
-          <p>A modern, responsive slot machine built entirely with HTML, CSS, and JavaScript.</p>
-          <div class="project-links">
-            <a href="https://github.com/kikinjeri/slot-machine" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://kikinjeri.github.io/slot-machine/" target="_blank" class="demo-link">Live Demo</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Node Express Login</h3>
-          <p>Node.js + Express login/signup application with email notifications.</p>
-          <div class="project-links">
-            <a href="https://github.com/kikinjeri/node-express-login" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>African Recipes</h3>
-          <p>Fetches country flag and recipe of selected country.</p>
-          <div class="project-links">
-            <a href="https://github.com/kikinjeri/african-recipes" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://kikinjeri.github.io/african-recipes" target="_blank" class="demo-link">Website</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>Git it Done</h3>
-          <p>Search by Github user or language to pull up repositories.</p>
-          <div class="project-links">
-            <a href="https://github.com/kikinjeri/git-it-done" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://kikinjeri.github.io/git-it-done/" target="_blank" class="demo-link">Website</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <h3>React ToDo</h3>
-          <p>React To Do list application.</p>
-          <div class="project-links">
-            <a href="https://github.com/username/react-todo" target="_blank" class="github-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://kikinjeri.github.io/react-todo" target="_blank" class="demo-link">Live Demo</a>
+        <div class="home-text">
+          <h1>Hello, I'm Mwihaki Githii</h1>
+          <h2>Junior Web Developer</h2>
+          <p>Motivated web developer skilled in HTML, CSS, JavaScript, Node.js, and React.js. Eager to contribute and grow in a forward-thinking team.</p>
+          
+          <div class="home-socials">
+            <a href="https://github.com/kikinjeri" target="_blank" class="social-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/username" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section animate">
-    <div class="section-container">
-      <h2 class="section-title">Contact Me</h2>
-      <form id="contact-form" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="socials">
-        <a href="https://github.com/kikinjeri" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/username" target="_blank">LinkedIn</a>
+    <!-- About Section -->
+    <section id="about" class="about animate">
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I am a motivated Junior Web Developer with a solid foundation in HTML, CSS, and JavaScript, and foundational knowledge in React, Node.js, and Express. I have built several small projects to hone my skills. While I have no formal work experience yet, I am adaptable, eager to learn, and ready to grow within a forward-thinking company. I thrive in dynamic environments and am committed to continuous improvement.</p>
+
+        <h3>Skills & Technologies</h3>
+        <ul class="skills-list">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+        </ul>
       </div>
-    </div>
-  </section>
-</main>
+    </section>
 
-<footer class="footer">
-  &copy; 2025 Mwihaki Githii. All Rights Reserved.
-</footer>
+    <!-- Projects Section -->
+    <section id="projects" class="projects animate">
+      <h2>Projects</h2>
+      <div class="project-grid">
 
-<!-- Script with cache busting -->
-<script src="script.js?v=1.2"></script>
+         <div class="project-card">
+          <h3 class="project-title">Crypto-Price-Tracker</h3>
+          <p class="project-desc">Crypto Trcacker is a web application that allows users to track real-time cryptocurrency prices and market trends using HTML, CSS, and JavaScript.
+          </p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/Crypto-Price-Tracker" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">Professional portfolio built with HTML, CSS, and JavaScript.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/m-githii" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Slot Machine</h3>
+          <p class="project-desc">A modern, responsive slot machine built entirely with HTML, CSS, and JavaScript.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/slot-machine" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Node Express Login</h3>
+          <p class="project-desc">A simple Node.js + Express login/signup application with email notifications.</p>
+          <div class="project-tech">
+            <span>Node.js</span><span>Express.js</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/node-express-login" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">African Recipes</h3>
+          <p class="project-desc">Fetches country flag and recipe of selected country.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/african-recipes" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">Git it Done</h3>
+          <p class="project-desc">Search by Github user or language to pull up repositories.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/kikinjeri/git-it-done" target="_blank" class="github-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact animate">
+      <div class="contact-container">
+        <h2>Contact Me</h2>
+        <p><i class="fas fa-user"></i> Mwihaki Githii</p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:wikigi.git@outlook.com">wikigi.git@outlook.com</a></p>
+        <p><i class="fas fa-phone"></i> <a href="tel:+13435436546">343-543-6546</a></p>
+        <div class="contact-socials">
+          <a href="https://github.com/kikinjeri" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://linkedin.com/in/username" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mwihaki Githii. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js?v=1"></script>
 </body>
 </html>
