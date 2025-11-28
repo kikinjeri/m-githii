@@ -107,14 +107,14 @@ nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateY(-25px); /* Raised */
+  transform: translateY(-25px);
 }
 
 .profile-img {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  object-position: top center; /* Show full head */
+  object-position: top center;
   border-radius: 50%;
   border: 3px solid var(--border);
 }
@@ -130,21 +130,23 @@ nav .logo {
   margin-bottom: 1.4rem;
 }
 
-.social-icons {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1.5rem;
-}
-
-.social-icons a {
-  font-size: 1.5rem;
-  color: var(--text);
+/* Social buttons like contact section */
+.home-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
   text-decoration: none;
-  transition: 0.3s;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
-.social-icons a:hover {
-  opacity: 0.6;
+.home-socials a:hover {
+  background: var(--text);
+  transform: scale(1.05);
 }
 
 /* ----------------------------------------------------
@@ -154,7 +156,7 @@ nav .logo {
   max-width: 800px;
 }
 
-.about-content h1 {
+.about-content h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
@@ -195,8 +197,8 @@ nav .logo {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
   width: 100%;
   max-width: 1100px;
 }
@@ -226,24 +228,28 @@ nav .logo {
 
 .project-description {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
+/* GitHub button style */
 .project-link {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: var(--text);
-  font-weight: 600;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-.project-link i {
-  font-size: 1.3rem;
+.project-link:hover {
+  background: var(--text);
+  transform: scale(1.05);
 }
 
-/* bottom spacing */
 .projects-bottom-space {
   height: 40px;
 }
@@ -251,35 +257,43 @@ nav .logo {
 /* ----------------------------------------------------
    Contact Section
 ---------------------------------------------------- */
-.contact-info {
+.contact-container {
   text-align: center;
 }
 
-.contact-info h1 {
+.contact-container h2 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
-.contact-item {
+.contact-container p {
   margin-bottom: 1.2rem;
   font-size: 1.2rem;
 }
 
-.contact-icons {
+.contact-socials {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: 1.5rem;
 }
 
-.contact-icons a {
-  font-size: 1.9rem;
-  color: var(--text);
-  transition: 0.3s;
+.contact-socials a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
 }
 
-.contact-icons a:hover {
-  opacity: 0.6;
+.contact-socials a:hover {
+  background: var(--text);
+  transform: scale(1.05);
 }
 
 /* ----------------------------------------------------
@@ -314,6 +328,7 @@ footer {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column on mobile */
   }
 }
+
