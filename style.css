@@ -132,10 +132,11 @@ nav .logo {
 
 /* Social buttons like contact section */
 .home-socials a {
+  margin-top: 1rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   background: var(--accent);
   color: #fff;
   border-radius: 8px;
